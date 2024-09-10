@@ -101,7 +101,7 @@ const routes = [
     name: 'EventClickView',
     component: () =>
       import(
-        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/2_event/EventClickView.vue'
+        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventClickView.vue'
       )
   },
   {
@@ -109,7 +109,7 @@ const routes = [
     name: 'EventChangeView',
     component: () =>
       import(
-        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/2_event/EventChangeView.vue'
+        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventChangeView.vue'
       )
   },
   {
@@ -117,7 +117,23 @@ const routes = [
     name: 'EventKeyView',
     component: () =>
       import(
-        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
+        /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
+      )
+  },
+  {
+    path: '/extra/if',
+    name: 'RenderingIfView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/3_extra/RenderingIfView.vue'
+      )
+  },
+  {
+    path: '/extra/show',
+    name: 'RenderingShowView',
+    component: () =>
+      import(
+        /* webpackChunkName: "extra", webpackPrefetch:true */ '../views/3_extra/RenderingShowView.vue'
       )
   }
 ]
